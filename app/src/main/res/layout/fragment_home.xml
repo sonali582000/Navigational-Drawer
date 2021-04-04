@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@drawable/bg7"
+    tools:context=".ui.home.HomeFragment">
+
+
+
+
+   <TextView
+       android:id="@+id/textView3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="20dp"
+       android:fontFamily="@font/berkshire_swash"
+       android:text="Best Animated Movies"
+       android:textColor="@color/white"
+       android:textSize="40dp"
+       android:textStyle="bold" />
+
+   <GridLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@id/textView3"
+       android:rowCount="3"
+       android:columnCount="2">
+
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_row="0"
+          android:layout_rowWeight="1"
+          android:layout_column="0"
+          android:layout_columnWeight="1"
+          android:layout_gravity="fill"
+          app:cardCornerRadius="8dp"
+          app:cardElevation="8dp"
+          app:cardUseCompatPadding="true">
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical|center_horizontal"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/g2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:src="@drawable/g2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="MINIONS"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+         </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          app:cardUseCompatPadding="true"
+          app:cardElevation="8dp"
+          app:cardCornerRadius="8dp"
+          android:layout_gravity="fill"
+          android:layout_columnWeight="1"
+          android:layout_column="1"
+          android:layout_rowWeight="1"
+          android:layout_row="0">
+
+         <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_gravity="center_vertical|center_horizontal"
+             android:orientation="vertical"
+             android:gravity="center">
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/g5"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/g1"
+                android:scaleType="fitXY"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:text="ANGRY BIRD"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+         </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+      <androidx.cardview.widget.CardView
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          app:cardUseCompatPadding="true"
+          app:cardElevation="8dp"
+          app:cardCornerRadius="8dp"
+          android:layout_gravity="fill"
+          android:layout_columnWeight="1"
+          android:layout_column="0"
+          android:layout_rowWeight="1"
+          android:layout_row="1">
+
+         <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_gravity="center_vertical|center_horizontal"
+             android:orientation="vertical"
+             android:gravity="center">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/g3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:src="@drawable/g3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:text="COMING SOON"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+         </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          app:cardUseCompatPadding="true"
+          app:cardElevation="8dp"
+          app:cardCornerRadius="8dp"
+          android:layout_gravity="fill"
+          android:layout_columnWeight="1"
+          android:layout_column="1"
+          android:layout_rowWeight="1"
+          android:layout_row="1">
+
+         <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_gravity="center_vertical|center_horizontal"
+             android:orientation="vertical"
+             android:gravity="center">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/g4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:src="@drawable/g4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:text="COMING SOON"
+                android:gravity="center"
+                android:textAlignment="center"/>
+         </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+
+   </GridLayout>
+</RelativeLayout>
